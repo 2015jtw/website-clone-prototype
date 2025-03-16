@@ -50,6 +50,7 @@ export default async function Page({ params: paramsPromise }: Args) {
 
   let page: RequiredDataFromCollectionSlug<'pages'> | null
 
+  // eslint-disable-next-line prefer-const
   page = await queryPageBySlug({
     slug,
   })
